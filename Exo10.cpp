@@ -19,7 +19,8 @@ string palindromeCheck (string word) {
 int main () {
   string word;
   cout << "Entrez un mot" << endl;
-  cin >> word;
+  // cin >> word;
+  getline(cin, word);
   cout << word << " est" << palindromeCheck(word) << "un palindrome" << endl;
   
   return 0;
