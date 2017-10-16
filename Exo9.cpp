@@ -7,16 +7,19 @@ using namespace std;
 
 int main()
 {
-  int bInf, bSup, n;
+  int bInf, bSup;
   srand(time(NULL));
+  const int nMax = 2147483647;
+  array <double, nMax> T;
+  int n;
   cout << "Donnez une borne inferieure : " << endl;
   cin >> bInf;
   cout << "Donnez une borne superieure : " << endl;
   cin >> bSup;
   cout << "Combien de valeurs voulez-vous ? : " << endl;
   cin >> n;
-  std::array <double, 10000> T;
-  //int tableau[n];
+
+  
   for(int i(0);i<n;i++)
   {
     T[i] = rand() % (bSup-bInf)+1;
