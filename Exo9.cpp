@@ -9,7 +9,7 @@ int main()
 {
   int bInf, bSup;
   srand(time(NULL));
-  const int nMax = 2147483647;
+  const int nMax = 10000;
   array <double, nMax> T;
   int n;
   cout << "Donnez une borne inferieure : " << endl;
